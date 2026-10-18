@@ -8,7 +8,6 @@ struct Rezultat {
     int kolvo;
 };
 
-// После n слагаемых ошибка не превосходит 4 / (2*n + 1).
 Rezultat raschetWhile(double tochnost) {
     Rezultat rez = {0, 0};
     int znak = 1;
@@ -53,7 +52,6 @@ int main() {
         cout << "do while: " << rez2.sum << "  n = " << rez2.kolvo << '\n';
         cout << "for:      " << rez3.sum << "  n = " << rez3.kolvo << "\n\n";
     }
-    // Точное значение используется только для проверки после вычислений.
     cout << "pi = " << acos(-1.0) << '\n';
     return 0;
 }
